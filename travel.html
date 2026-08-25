@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YatraNepal - Travel & Tourism</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2 class="logo">Yatra<span>Nepal</span></h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="login-btn" onclick="login()">Login</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Explore Nepal</h1>
+            <p>Discover beautiful places, exciting adventures and unforgettable journeys.</p>
+
+            <div class="search-box">
+                <input type="text" id="destination" placeholder="Where do you want to go?">
+                <button onclick="searchDestination()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="section" id="destinations">
+        <h2>Popular Destinations</h2>
+        <p class="subtitle">Explore the beauty of Nepal</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-image everest"></div>
+                <div class="card-content">
+                    <h3>Mount Everest</h3>
+                    <p>Experience the world's highest mountain.</p>
+                    <button onclick="viewPlace('Mount Everest')">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image pokhara"></div>
+                <div class="card-content">
+                    <h3>Pokhara</h3>
+                    <p>Enjoy lakes, mountains and beautiful scenery.</p>
+                    <button onclick="viewPlace('Pokhara')">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image mustang"></div>
+                <div class="card-content">
+                    <h3>Mustang</h3>
+                    <p>Discover the unique landscapes of Mustang.</p>
+                    <button onclick="viewPlace('Mustang')">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="packages" id="packages">
+        <h2>Popular Travel Packages</h2>
+
+        <div class="package-container">
+
+            <div class="package">
+                <h3>Everest Base Camp</h3>
+                <p>🏔️ 14 Days Trek</p>
+                <h3>$1200</h3>
+                <button onclick="bookPackage('Everest Base Camp')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="package">
+                <h3>Annapurna Trek</h3>
+                <p>🥾 10 Days Trek</p>
+                <h3>$900</h3>
+                <button onclick="bookPackage('Annapurna Trek')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="package">
+                <h3>Pokhara Tour</h3>
+                <p>🏞️ 5 Days Tour</p>
+                <h3>$400</h3>
+                <button onclick="bookPackage('Pokhara Tour')">
+                    Book Now
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>Why Choose YatraNepal?</h2>
+
+        <div class="features">
+            <div>
+                <h3>🗺️ Local Guides</h3>
+                <p>Experienced local guides for your journey.</p>
+            </div>
+
+            <div>
+                <h3>💳 Easy Booking</h3>
+                <p>Simple and convenient online booking.</p>
+            </div>
+
+            <div>
+                <h3>🌤️ Travel Information</h3>
+                <p>Get useful information before your trip.</p>
+            </div>
+
+            <div>
+                <h3>🔒 Secure</h3>
+                <p>Your booking information is protected.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Plan Your Journey</h2>
+        <p>Start your unforgettable Nepal adventure today.</p>
+
+        <button onclick="contactUs()">Contact Us</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>YatraNepal</h2>
+        <p>Explore Nepal. Discover Yourself.</p>
+        <p>© 2026 YatraNepal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="travel.js"></script>
+
+</body>
+
+</html>
